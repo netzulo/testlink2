@@ -13,10 +13,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/netzulo/testlink2.git"
-  },
+  "repository": "https://github.com/netzulo/testlink2",
   "scripts": {
     "build": "ember build",
     "lint:js": "eslint ./*.js app blueprints config lib server tests",
