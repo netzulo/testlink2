@@ -4,17 +4,25 @@
   "private": true,
   "description": "Small description for testlink2 goes here",
   "license": "MIT",
-  "author": "",
+  "author": "Netzulo",
+  "homepage": "https://github.com/netzulo/testlink2/",
+  "bugs": {
+    "url": "https://github.com/netzulo/testlink2/issues"
+  },
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netzulo/testlink2.git"
+  },
   "scripts": {
     "build": "ember build",
     "lint:js": "eslint ./*.js app blueprints config lib server tests",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "ember test",
+    "test-server": "ember test --server"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",

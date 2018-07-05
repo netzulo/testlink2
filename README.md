@@ -1,7 +1,7 @@
-# testlink2
+# Testlink2
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This new front-end webapp just calls for XMLRPC Testlink API. Can continue to using
+old front-end front-end refactor for existing ``Testlink 1.9.x``.
 
 ## Prerequisites
 
