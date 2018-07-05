@@ -1,14 +1,19 @@
-<header>
-    <h1 class="center">Testlink2</h1>
-    <h2><i>This new front-end webapp just calls for XMLRPC Testlink API</i></h2>
+<header id="mainHeader" class="row col-lg-12">
+    <h1 class="text-center">Testlink2</h1>
+    <h4 class="text-center"><i>This new front-end webapp just calls for XMLRPC Testlink API</i></h4>
 </header>
-<aside
-Side menu
-></aside>
-<section>
-    Main content
+<nav id="mainMenuTop" class="col-lg-12">
+    <p>TOP menu: <code>TODO: make sense...</code></p>
+    {{tl-menu}}
+</nav>
+<aside id="mainMenuSide" class="col-lg-2">
+    <p>SIDE menu: <code>TODO: make sense...</code></p>
+    {{tl-menu}}
+</aside>
+<section id="mainContent" class="col-lg-10">
+    <p>MAIN content: <code>TODO: make sense...</code></p>
+    {{outlet}}
 </section>
-<footer>
-    Footer
+<footer id="mainFooter" class="col-lg-12">
+    <p>FOOTER: <code>TODO: make sense...</code></p>
 </footer>
-{{outlet}}
