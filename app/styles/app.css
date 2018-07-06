@@ -1,0 +1,30 @@
+/* 
+    TEMPLATE static
+*/
+body {
+    background: #EEE;
+}
+/*col-12: common header*/
+#mainHeader {}
+/*col-12: common top menu*/
+#mainMenuTop {}
+/*col-12: common side menu*/
+#mainMenuSide {}
+/*col-12: common footer*/
+#mainFooter {}
+/*col-12: content*/
+#mainContent {}
+
+
+/*
+Helper classes
+*/
+
+/*
+Make separator as ':' and/or spaces don be a part of HTML content
+
+example: <label data-separator=": ">Field title</label>
+*/
+label.label-content:after {
+    content: attr(data-separator)
+}

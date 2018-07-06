@@ -1,6 +1,6 @@
-<header id="mainHeader" class="row col-lg-12">
-    <h1 class="text-center">Testlink2</h1>
-    <h4 class="text-center"><i>This new front-end webapp just calls for XMLRPC Testlink API</i></h4>
+<header id="mainHeader" class="col-lg-12">
+    <h1 class="col-lg-12 text-center">Testlink2</h1>
+    <p class="col-lg-12 text-center"><i>This new front-end webapp just calls for XMLRPC Testlink API</i></p>
 </header>
 <nav id="mainMenuTop" class="col-lg-12">
     <p>TOP menu: <code>TODO: make sense...</code></p>
@@ -8,10 +8,11 @@
 </nav>
 <aside id="mainMenuSide" class="col-lg-2">
     <p>SIDE menu: <code>TODO: make sense...</code></p>
-    {{tl-menu}}
+    <!-- {{tl-menu}} -->
 </aside>
 <section id="mainContent" class="col-lg-10">
     <p>MAIN content: <code>TODO: make sense...</code></p>
+    {{tproject-list}}
     {{outlet}}
 </section>
 <footer id="mainFooter" class="col-lg-12">
