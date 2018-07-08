@@ -6,14 +6,14 @@ body {
 }
 /*col-12: common header*/
 #mainHeader {}
-/*col-12: common top menu*/
-#mainMenuTop {}
-/*col-12: common side menu*/
+/*common top menu*/
+#mainHeader #mainMenuTop {}
+/*col-3: common side menu*/
 #mainMenuSide {}
+/*col-9: content*/
+#mainContent {}
 /*col-12: common footer*/
 #mainFooter {}
-/*col-12: content*/
-#mainContent {}
 
 
 /*
