@@ -1,0 +1,57 @@
+{{#bs-nav type=type justified=justified stacked=stacked as |nav|}}
+  {{#nav.dropdown as |dd|}}
+        {{#dd.toggle}}System<span class="caret"></span>{{/dd.toggle}}
+        {{#dd.menu as |ddm|}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Custom Fields{{/ddm.link-to}}{{/ddm.item}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Issue tracker{{/ddm.link-to}}{{/ddm.item}}
+        {{/dd.menu}}
+      {{/nav.dropdown}}
+      {{#nav.dropdown as |dd|}}
+        {{#dd.toggle}}Projects Management <span class="caret"></span>{{/dd.toggle}}
+        {{#dd.menu as |ddm|}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Test Projects {{/ddm.link-to}}{{/ddm.item}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Assign roles to users {{/ddm.link-to}}{{/ddm.item}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Assign Custom fields {{/ddm.link-to}}{{/ddm.item}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Test Keywords {{/ddm.link-to}}{{/ddm.item}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Test Platforms {{/ddm.link-to}}{{/ddm.item}}
+        {{/dd.menu}}
+      {{/nav.dropdown}}
+      {{#nav.dropdown as |dd|}}
+        {{#dd.toggle}}Testcase specification<span class="caret"></span>{{/dd.toggle}}
+        {{#dd.menu as |ddm|}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Edit TestCase{{/ddm.link-to}}{{/ddm.item}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Search TestCase{{/ddm.link-to}}{{/ddm.item}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Assign Keyworkds{{/ddm.link-to}}{{/ddm.item}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Created testcases by user{{/ddm.link-to}}{{/ddm.item}}
+        {{/dd.menu}}
+      {{/nav.dropdown}}
+      {{#nav.dropdown as |dd|}}
+        {{#dd.toggle}}Plans Management <span class="caret"></span>{{/dd.toggle}}
+        {{#dd.menu as |ddm|}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Test Plans{{/ddm.link-to}}{{/ddm.item}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Test Builds{{/ddm.link-to}}{{/ddm.item}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Test Milestones{{/ddm.link-to}}{{/ddm.item}}
+        {{/dd.menu}}
+      {{/nav.dropdown}}
+      {{#nav.dropdown as |dd|}}
+        {{#dd.toggle}}Testcase execution <span class="caret"></span>{{/dd.toggle}}
+        {{#dd.menu as |ddm|}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Exec testcases{{/ddm.link-to}}{{/ddm.item}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Assigned testcases{{/ddm.link-to}}{{/ddm.item}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Test report &amp; metrics{{/ddm.link-to}}{{/ddm.item}}
+        {{/dd.menu}}
+      {{/nav.dropdown}}
+      {{#nav.dropdown as |dd|}}
+        {{#dd.toggle}}Testplan Contents<span class="caret"></span>{{/dd.toggle}}
+        {{#dd.menu as |ddm|}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Assign/Deassign Platforms{{/ddm.link-to}}{{/ddm.item}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Assign/Deassign Testcases{{/ddm.link-to}}{{/ddm.item}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Assign Testcases execution{{/ddm.link-to}}{{/ddm.item}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Set Urgent Testcases{{/ddm.link-to}}{{/ddm.item}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Update vinculed Testcases versions{{/ddm.link-to}}{{/ddm.item}}
+          {{#ddm.item}}{{#ddm.link-to "index"}}<span class="glyphicon glyphicon-menu-hamburger"></span>Show latest versions of Testcases{{/ddm.link-to}}{{/ddm.item}}
+        {{/dd.menu}}
+      {{/nav.dropdown}}
+{{/bs-nav}}
+
+{{yield}}

@@ -1,19 +1,24 @@
-<header id="mainHeader" class="row col-lg-12">
-    <h1 class="text-center">Testlink2</h1>
-    <h4 class="text-center"><i>This new front-end webapp just calls for XMLRPC Testlink API</i></h4>
+<header id="mainHeader" class="col-lg-12">
+    <nav id="mainMenuTop">
+        {{tl-menu}}
+    </nav>
+    <p class="col-lg-12 text-center label label-info"><i>This new front-end webapp just calls for XMLRPC Testlink API</i></p>
 </header>
-<nav id="mainMenuTop" class="col-lg-12">
-    <p>TOP menu: <code>TODO: make sense...</code></p>
-    {{tl-menu}}
-</nav>
-<aside id="mainMenuSide" class="col-lg-2">
-    <p>SIDE menu: <code>TODO: make sense...</code></p>
-    {{tl-menu}}
+<aside id="mainMenuSide" class="col-lg-3">
+    {{tl-menu-side}}
 </aside>
-<section id="mainContent" class="col-lg-10">
-    <p>MAIN content: <code>TODO: make sense...</code></p>
+<section id="mainContent" class="col-lg-9">
+    <h3>How to develop ?</h3>
+    <ol>
+        <li>Clone Tests project from github <code>git clone https://github.com/TestLinkOpenSourceTRMS/testlink-tests</code></li>
+        <li>Execute Tests with Python to ensure your testlink installation <code>pip install qautils && python setup.py install test</code></li>
+        <li>Clone New front-end webapp from github: <code>git clone https://github.com/netzulo/testlink2</code></li>
+        <li>Create new branch from master and start to write: <code>git checkout -f master && git branch my_new_awesome_func</code></li>
+        <li>Finally, pull your branch as PR and wait: <code>git push --set-upstream origin my_new_awesome_func</code></li>
+    </ol>
+    {{tproject-list}}
     {{outlet}}
 </section>
 <footer id="mainFooter" class="col-lg-12">
-    <p>FOOTER: <code>TODO: make sense...</code></p>
+    <p class="col-lg-12 text-center label label-danger"><i>Footer not developed yet</i></p>
 </footer>
